@@ -39,9 +39,9 @@ NSString *const kCellID = @"Cell";
 #pragma mark UITableViewDelegate
 
 - (CGFloat)tableView:(TableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  LabelTableViewCell *cell = [tableView sizingCellForReuseIdentifier:kCellID];
+  LabelTableViewCell *cell = (LabelTableViewCell *)[tableView sizingCellForReuseIdentifier:kCellID];
   [self _configureCell:cell atIndexPath:indexPath];
-  return [cell heightForWidth:CGRectGetWidth(tableView.bounds)];
+  return [cell al_heightForWidth:CGRectGetWidth(tableView.bounds)];
 }
 
 #pragma mark UITableViewDataSource

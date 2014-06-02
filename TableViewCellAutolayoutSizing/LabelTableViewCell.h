@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Tom Abraham. All rights reserved.
 //
 
-#import "TableViewCell.h"
+#import <UIKit/UIKit.h>
 
-@interface LabelTableViewCell : TableViewCell
+#import "UITableViewCell+AutolayoutSupport.h"
+
+@interface LabelTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) UILabel *label;
 

@@ -22,9 +22,12 @@
 
   if (!self.reuseIDToCellClassMap) self.reuseIDToCellClassMap = [NSMutableDictionary new];
 
+  // register reuseID -> cellClass mapping
   if (cellClass) {
     self.reuseIDToCellClassMap[identifier] = cellClass;
-  } else {
+
+  // delete any existing reuseID -> cellClass mapping
+  } else if (self.reuseIDToCellClassMap[identifier]) {
     [self.reuseIDToCellClassMap removeObjectForKey:identifier];
   }
 }
@@ -37,9 +40,8 @@
 
   if (!self.sizingCells) self.sizingCells = [NSMutableDictionary new];
 
-  if (self.sizingCells[identifier]) return self.sizingCells[identifier];
-
-  self.sizingCells[identifier] = [cellClass new];
+  // make a sizing cell, if one doesn't already exist
+  if (!self.sizingCells[identifier]) self.sizingCells[identifier] = [cellClass new];
 
   return self.sizingCells[identifier];
 }

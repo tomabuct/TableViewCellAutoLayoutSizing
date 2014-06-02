@@ -24,10 +24,11 @@
 #pragma mark Layout
 
 - (void)_installConstraints {
+  [self al_initAutolayoutSupport];
+
   NSDictionary *views = @{ @"label": self.label, @"contentView": self.contentView };
 
   [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[contentView(>=50)]" options:0 metrics:nil views:views]];
-
 
   self.label.translatesAutoresizingMaskIntoConstraints = NO;
   [self.contentView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[label]|" options:0 metrics:nil views:views]];

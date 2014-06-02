@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F11B6775193C740600F8BE44 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6774193C740600F8BE44 /* TableView.m */; };
+		F11B6778193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */; };
+		F11B6779193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */; };
 		F168252F1936621200D801FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F168252E1936621200D801FD /* Foundation.framework */; };
 		F16825311936621200D801FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825301936621200D801FD /* CoreGraphics.framework */; };
 		F16825331936621200D801FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825321936621200D801FD /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		F16825531936621200D801FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825321936621200D801FD /* UIKit.framework */; };
 		F168255B1936621200D801FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F16825591936621200D801FD /* InfoPlist.strings */; };
 		F168255D1936621200D801FD /* TableViewCellAutolayoutSizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F168255C1936621200D801FD /* TableViewCellAutolayoutSizingTests.m */; };
-		F16825681936636500D801FD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F16825671936636500D801FD /* TableViewCell.m */; };
-		F16825691936636500D801FD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F16825671936636500D801FD /* TableViewCell.m */; };
 		F168256C193695CF00D801FD /* LabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F168256B193695CF00D801FD /* LabelTableViewCell.m */; };
 		F168256D193695CF00D801FD /* LabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F168256B193695CF00D801FD /* LabelTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -40,6 +40,8 @@
 /* Begin PBXFileReference section */
 		F11B6773193C740600F8BE44 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		F11B6774193C740600F8BE44 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
+		F11B6776193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AutolayoutSupport.h"; sourceTree = "<group>"; };
+		F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AutolayoutSupport.m"; sourceTree = "<group>"; };
 		F168252B1936621200D801FD /* TableViewCellAutolayoutSizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellAutolayoutSizing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F168252E1936621200D801FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F16825301936621200D801FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +60,6 @@
 		F16825581936621200D801FD /* TableViewCellAutolayoutSizingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellAutolayoutSizingTests-Info.plist"; sourceTree = "<group>"; };
 		F168255A1936621200D801FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F168255C1936621200D801FD /* TableViewCellAutolayoutSizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellAutolayoutSizingTests.m; sourceTree = "<group>"; };
-		F16825661936636500D801FD /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		F16825671936636500D801FD /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		F168256A193695CF00D801FD /* LabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTableViewCell.h; sourceTree = "<group>"; };
 		F168256B193695CF00D801FD /* LabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +127,8 @@
 				F16825471936621200D801FD /* ViewController.m */,
 				F11B6773193C740600F8BE44 /* TableView.h */,
 				F11B6774193C740600F8BE44 /* TableView.m */,
-				F16825661936636500D801FD /* TableViewCell.h */,
-				F16825671936636500D801FD /* TableViewCell.m */,
+				F11B6776193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.h */,
+				F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */,
 				F168256A193695CF00D801FD /* LabelTableViewCell.h */,
 				F168256B193695CF00D801FD /* LabelTableViewCell.m */,
 				F16825491936621200D801FD /* Images.xcassets */,
@@ -264,7 +264,7 @@
 			files = (
 				F168256C193695CF00D801FD /* LabelTableViewCell.m in Sources */,
 				F16825481936621200D801FD /* ViewController.m in Sources */,
-				F16825681936636500D801FD /* TableViewCell.m in Sources */,
+				F11B6778193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */,
 				F11B6775193C740600F8BE44 /* TableView.m in Sources */,
 				F168253F1936621200D801FD /* AppDelegate.m in Sources */,
 				F168253B1936621200D801FD /* main.m in Sources */,
@@ -277,7 +277,7 @@
 			files = (
 				F168256D193695CF00D801FD /* LabelTableViewCell.m in Sources */,
 				F168255D1936621200D801FD /* TableViewCellAutolayoutSizingTests.m in Sources */,
-				F16825691936636500D801FD /* TableViewCell.m in Sources */,
+				F11B6779193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
