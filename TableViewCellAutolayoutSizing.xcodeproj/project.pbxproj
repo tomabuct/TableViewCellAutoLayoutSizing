@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11B6775193C740600F8BE44 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6774193C740600F8BE44 /* TableView.m */; };
 		F168252F1936621200D801FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F168252E1936621200D801FD /* Foundation.framework */; };
 		F16825311936621200D801FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825301936621200D801FD /* CoreGraphics.framework */; };
 		F16825331936621200D801FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825321936621200D801FD /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F11B6773193C740600F8BE44 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
+		F11B6774193C740600F8BE44 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
 		F168252B1936621200D801FD /* TableViewCellAutolayoutSizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellAutolayoutSizing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F168252E1936621200D801FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F16825301936621200D801FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				F168253E1936621200D801FD /* AppDelegate.m */,
 				F16825461936621200D801FD /* ViewController.h */,
 				F16825471936621200D801FD /* ViewController.m */,
+				F11B6773193C740600F8BE44 /* TableView.h */,
+				F11B6774193C740600F8BE44 /* TableView.m */,
 				F16825661936636500D801FD /* TableViewCell.h */,
 				F16825671936636500D801FD /* TableViewCell.m */,
 				F168256A193695CF00D801FD /* LabelTableViewCell.h */,
@@ -260,6 +265,7 @@
 				F168256C193695CF00D801FD /* LabelTableViewCell.m in Sources */,
 				F16825481936621200D801FD /* ViewController.m in Sources */,
 				F16825681936636500D801FD /* TableViewCell.m in Sources */,
+				F11B6775193C740600F8BE44 /* TableView.m in Sources */,
 				F168253F1936621200D801FD /* AppDelegate.m in Sources */,
 				F168253B1936621200D801FD /* main.m in Sources */,
 			);
@@ -462,6 +468,7 @@
 				F16825621936621200D801FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F16825631936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutolayoutSizingTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				F16825651936621200D801FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

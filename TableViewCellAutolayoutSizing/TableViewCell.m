@@ -14,9 +14,14 @@
   // set cell width
   self.bounds = CGRectMake(0, 0, width, CGRectGetHeight(self.bounds));
 
+  UIViewAutoresizing contentViewAutoresizingMask = self.contentView.autoresizingMask;
+  self.contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+
   // lay out cell view hierarchy with specified width
   // this makes sure any preferredMaxLayoutWidths, etc. are set
   [self layoutIfNeeded];
+
+  self.contentView.autoresizingMask = contentViewAutoresizingMask;
 
   // +1 to account for 0.5pt cell separator http://tomabuct.com/post/73484699239/uitableviews-in-ios-7
   // since UITableView doesn't like it when tableView:heightForRowAtIndexPath: returns a fractional height

@@ -9,12 +9,13 @@
 #import "ViewController.h"
 
 #import "LabelTableViewCell.h"
+#import "TableView.h"
 
 NSString *const kCellID = @"Cell";
 
 @interface ViewController ()
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) TableView *tableView;
 
 @end
 
@@ -22,7 +23,7 @@ NSString *const kCellID = @"Cell";
 
 - (instancetype)init {
   if (self = [super init]) {
-    _tableView = [[UITableView alloc] init];
+    _tableView = [[TableView alloc] init];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.userInteractionEnabled = YES;
@@ -37,8 +38,8 @@ NSString *const kCellID = @"Cell";
 
 #pragma mark UITableViewDelegate
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  LabelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
+- (CGFloat)tableView:(TableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  LabelTableViewCell *cell = [tableView sizingCellForReuseIdentifier:kCellID];
   [self _configureCell:cell atIndexPath:indexPath];
   return [cell heightForWidth:CGRectGetWidth(tableView.bounds)];
 }
