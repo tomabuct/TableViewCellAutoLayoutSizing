@@ -1,16 +1,16 @@
 //
-//  UITableViewCell+AutolayoutSupport.m
-//  TableViewCellAutolayoutSizing
+//  UITableViewCell+AutoLayoutSupport.m
+//  TableViewCellAutoLayoutSizing
 //
 //  Created by Tom Abraham on 6/2/14.
 //  Copyright (c) 2014 Tom Abraham. All rights reserved.
 //
 
-#import "UITableViewCell+AutolayoutSupport.h"
+#import "UITableViewCell+AutoLayoutSupport.h"
 
-@implementation UITableViewCell (AutolayoutSupport)
+@implementation UITableViewCell (AutoLayoutSupport)
 
-- (void)al_initAutolayoutSupport {
+- (void)al_initAutoLayoutSupport {
   // this prevents the temporary unsatisfiable constraint state that the cell's contentView could
   // enter since it starts off 44pts tall (atleast on OS6 and OS7)
   self.contentView.autoresizingMask |= UIViewAutoresizingFlexibleHeight;

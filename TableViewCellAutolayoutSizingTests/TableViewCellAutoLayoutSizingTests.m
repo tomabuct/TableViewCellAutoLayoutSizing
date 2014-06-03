@@ -1,6 +1,6 @@
 //
-//  TableViewCellAutolayoutSizingTests.m
-//  TableViewCellAutolayoutSizingTests
+//  TableViewCellAutoLayoutSizingTests.m
+//  TableViewCellAutoLayoutSizingTests
 //
 //  Created by Tom Abraham on 5/28/14.
 //  Copyright (c) 2014 Tom Abraham. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface TableViewCellAutolayoutSizingTests : XCTestCase
+@interface TableViewCellAutoLayoutSizingTests : XCTestCase
 
 @end
 
-@implementation TableViewCellAutolayoutSizingTests
+@implementation TableViewCellAutoLayoutSizingTests
 
 - (void)setUp
 {

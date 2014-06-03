@@ -1,6 +1,6 @@
 //
 //  LabelTableViewCell.m
-//  TableViewCellAutolayoutSizing
+//  TableViewCellAutoLayoutSizing
 //
 //  Created by Tom Abraham on 5/28/14.
 //  Copyright (c) 2014 Tom Abraham. All rights reserved.
@@ -24,7 +24,7 @@
 #pragma mark Layout
 
 - (void)_installConstraints {
-  [self al_initAutolayoutSupport];
+  [self al_initAutoLayoutSupport];
 
   NSDictionary *views = @{ @"label": self.label, @"contentView": self.contentView };
 

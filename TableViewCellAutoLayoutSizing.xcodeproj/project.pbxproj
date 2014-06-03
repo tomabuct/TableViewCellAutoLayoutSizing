@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F11B6775193C740600F8BE44 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6774193C740600F8BE44 /* TableView.m */; };
-		F11B6778193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */; };
-		F11B6779193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */; };
+		F11B6778193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m */; };
+		F11B6779193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = F11B6777193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m */; };
 		F168252F1936621200D801FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F168252E1936621200D801FD /* Foundation.framework */; };
 		F16825311936621200D801FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825301936621200D801FD /* CoreGraphics.framework */; };
 		F16825331936621200D801FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825321936621200D801FD /* UIKit.framework */; };
@@ -22,7 +22,7 @@
 		F16825521936621200D801FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F168252E1936621200D801FD /* Foundation.framework */; };
 		F16825531936621200D801FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16825321936621200D801FD /* UIKit.framework */; };
 		F168255B1936621200D801FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F16825591936621200D801FD /* InfoPlist.strings */; };
-		F168255D1936621200D801FD /* TableViewCellAutolayoutSizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F168255C1936621200D801FD /* TableViewCellAutolayoutSizingTests.m */; };
+		F168255D1936621200D801FD /* TableViewCellAutoLayoutSizingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F168255C1936621200D801FD /* TableViewCellAutoLayoutSizingTests.m */; };
 		F168256C193695CF00D801FD /* LabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F168256B193695CF00D801FD /* LabelTableViewCell.m */; };
 		F168256D193695CF00D801FD /* LabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F168256B193695CF00D801FD /* LabelTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -40,26 +40,26 @@
 /* Begin PBXFileReference section */
 		F11B6773193C740600F8BE44 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableView.h; sourceTree = "<group>"; };
 		F11B6774193C740600F8BE44 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableView.m; sourceTree = "<group>"; };
-		F11B6776193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AutolayoutSupport.h"; sourceTree = "<group>"; };
-		F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AutolayoutSupport.m"; sourceTree = "<group>"; };
-		F168252B1936621200D801FD /* TableViewCellAutolayoutSizing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellAutolayoutSizing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11B6776193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AutoLayoutSupport.h"; sourceTree = "<group>"; };
+		F11B6777193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AutoLayoutSupport.m"; sourceTree = "<group>"; };
+		F168252B1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F168252E1936621200D801FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F16825301936621200D801FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F16825321936621200D801FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F16825361936621200D801FD /* TableViewCellAutolayoutSizing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellAutolayoutSizing-Info.plist"; sourceTree = "<group>"; };
+		F16825361936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
 		F16825381936621200D801FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F168253A1936621200D801FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F168253C1936621200D801FD /* TableViewCellAutolayoutSizing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewCellAutolayoutSizing-Prefix.pch"; sourceTree = "<group>"; };
+		F168253C1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
 		F168253D1936621200D801FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F168253E1936621200D801FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F16825461936621200D801FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F16825471936621200D801FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F16825491936621200D801FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F168254F1936621200D801FD /* TableViewCellAutolayoutSizingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCellAutolayoutSizingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F168254F1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F16825501936621200D801FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F16825581936621200D801FD /* TableViewCellAutolayoutSizingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellAutolayoutSizingTests-Info.plist"; sourceTree = "<group>"; };
+		F16825581936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests-Info.plist"; sourceTree = "<group>"; };
 		F168255A1936621200D801FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F168255C1936621200D801FD /* TableViewCellAutolayoutSizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellAutolayoutSizingTests.m; sourceTree = "<group>"; };
+		F168255C1936621200D801FD /* TableViewCellAutoLayoutSizingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellAutoLayoutSizingTests.m; sourceTree = "<group>"; };
 		F168256A193695CF00D801FD /* LabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelTableViewCell.h; sourceTree = "<group>"; };
 		F168256B193695CF00D801FD /* LabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,8 +91,8 @@
 		F16825221936621200D801FD = {
 			isa = PBXGroup;
 			children = (
-				F16825341936621200D801FD /* TableViewCellAutolayoutSizing */,
-				F16825561936621200D801FD /* TableViewCellAutolayoutSizingTests */,
+				F16825341936621200D801FD /* TableViewCellAutoLayoutSizing */,
+				F16825561936621200D801FD /* TableViewCellAutoLayoutSizingTests */,
 				F168252D1936621200D801FD /* Frameworks */,
 				F168252C1936621200D801FD /* Products */,
 			);
@@ -101,8 +101,8 @@
 		F168252C1936621200D801FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F168252B1936621200D801FD /* TableViewCellAutolayoutSizing.app */,
-				F168254F1936621200D801FD /* TableViewCellAutolayoutSizingTests.xctest */,
+				F168252B1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename.app */,
+				F168254F1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F16825341936621200D801FD /* TableViewCellAutolayoutSizing */ = {
+		F16825341936621200D801FD /* TableViewCellAutoLayoutSizing */ = {
 			isa = PBXGroup;
 			children = (
 				F168253D1936621200D801FD /* AppDelegate.h */,
@@ -127,40 +127,42 @@
 				F16825471936621200D801FD /* ViewController.m */,
 				F11B6773193C740600F8BE44 /* TableView.h */,
 				F11B6774193C740600F8BE44 /* TableView.m */,
-				F11B6776193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.h */,
-				F11B6777193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m */,
+				F11B6776193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.h */,
+				F11B6777193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m */,
 				F168256A193695CF00D801FD /* LabelTableViewCell.h */,
 				F168256B193695CF00D801FD /* LabelTableViewCell.m */,
 				F16825491936621200D801FD /* Images.xcassets */,
 				F16825351936621200D801FD /* Supporting Files */,
 			);
+			name = TableViewCellAutoLayoutSizing;
 			path = TableViewCellAutolayoutSizing;
 			sourceTree = "<group>";
 		};
 		F16825351936621200D801FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F16825361936621200D801FD /* TableViewCellAutolayoutSizing-Info.plist */,
+				F16825361936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Info.plist */,
 				F16825371936621200D801FD /* InfoPlist.strings */,
 				F168253A1936621200D801FD /* main.m */,
-				F168253C1936621200D801FD /* TableViewCellAutolayoutSizing-Prefix.pch */,
+				F168253C1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F16825561936621200D801FD /* TableViewCellAutolayoutSizingTests */ = {
+		F16825561936621200D801FD /* TableViewCellAutoLayoutSizingTests */ = {
 			isa = PBXGroup;
 			children = (
-				F168255C1936621200D801FD /* TableViewCellAutolayoutSizingTests.m */,
+				F168255C1936621200D801FD /* TableViewCellAutoLayoutSizingTests.m */,
 				F16825571936621200D801FD /* Supporting Files */,
 			);
+			name = TableViewCellAutoLayoutSizingTests;
 			path = TableViewCellAutolayoutSizingTests;
 			sourceTree = "<group>";
 		};
 		F16825571936621200D801FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F16825581936621200D801FD /* TableViewCellAutolayoutSizingTests-Info.plist */,
+				F16825581936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests-Info.plist */,
 				F16825591936621200D801FD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -169,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F168252A1936621200D801FD /* TableViewCellAutolayoutSizing */ = {
+		F168252A1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F16825601936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutolayoutSizing" */;
+			buildConfigurationList = F16825601936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				F16825271936621200D801FD /* Sources */,
 				F16825281936621200D801FD /* Frameworks */,
@@ -181,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = TableViewCellAutolayoutSizing;
+			name = TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename;
 			productName = TableViewCellAutolayoutSizing;
-			productReference = F168252B1936621200D801FD /* TableViewCellAutolayoutSizing.app */;
+			productReference = F168252B1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F168254E1936621200D801FD /* TableViewCellAutolayoutSizingTests */ = {
+		F168254E1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F16825631936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutolayoutSizingTests" */;
+			buildConfigurationList = F16825631936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests" */;
 			buildPhases = (
 				F168254B1936621200D801FD /* Sources */,
 				F168254C1936621200D801FD /* Frameworks */,
@@ -199,9 +201,9 @@
 			dependencies = (
 				F16825551936621200D801FD /* PBXTargetDependency */,
 			);
-			name = TableViewCellAutolayoutSizingTests;
+			name = TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests;
 			productName = TableViewCellAutolayoutSizingTests;
-			productReference = F168254F1936621200D801FD /* TableViewCellAutolayoutSizingTests.xctest */;
+			productReference = F168254F1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -218,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F16825261936621200D801FD /* Build configuration list for PBXProject "TableViewCellAutolayoutSizing" */;
+			buildConfigurationList = F16825261936621200D801FD /* Build configuration list for PBXProject "TableViewCellAutoLayoutSizing" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -231,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F168252A1936621200D801FD /* TableViewCellAutolayoutSizing */,
-				F168254E1936621200D801FD /* TableViewCellAutolayoutSizingTests */,
+				F168252A1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename */,
+				F168254E1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +266,7 @@
 			files = (
 				F168256C193695CF00D801FD /* LabelTableViewCell.m in Sources */,
 				F16825481936621200D801FD /* ViewController.m in Sources */,
-				F11B6778193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */,
+				F11B6778193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m in Sources */,
 				F11B6775193C740600F8BE44 /* TableView.m in Sources */,
 				F168253F1936621200D801FD /* AppDelegate.m in Sources */,
 				F168253B1936621200D801FD /* main.m in Sources */,
@@ -276,8 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F168256D193695CF00D801FD /* LabelTableViewCell.m in Sources */,
-				F168255D1936621200D801FD /* TableViewCellAutolayoutSizingTests.m in Sources */,
-				F11B6779193D258F00F8BE44 /* UITableViewCell+AutolayoutSupport.m in Sources */,
+				F168255D1936621200D801FD /* TableViewCellAutoLayoutSizingTests.m in Sources */,
+				F11B6779193D258F00F8BE44 /* UITableViewCell+AutoLayoutSupport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +288,7 @@
 /* Begin PBXTargetDependency section */
 		F16825551936621200D801FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F168252A1936621200D801FD /* TableViewCellAutolayoutSizing */;
+			target = F168252A1936621200D801FD /* TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename */;
 			targetProxy = F16825541936621200D801FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -389,9 +391,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewCellAutolayoutSizing/TableViewCellAutolayoutSizing-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCellAutolayoutSizing/TableViewCellAutolayoutSizing-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableViewCellAutolayoutSizing/TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellAutolayoutSizing/TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,9 +404,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TableViewCellAutolayoutSizing/TableViewCellAutolayoutSizing-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCellAutolayoutSizing/TableViewCellAutolayoutSizing-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TableViewCellAutolayoutSizing/TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "TableViewCellAutolayoutSizing/TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -424,8 +426,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TableViewCellAutolayoutSizingTests/TableViewCellAutolayoutSizingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewCellAutolayoutSizingTests/TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -442,8 +444,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableViewCellAutolayoutSizing/TableViewCellAutolayoutSizing-Prefix.pch";
-				INFOPLIST_FILE = "TableViewCellAutolayoutSizingTests/TableViewCellAutolayoutSizingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TableViewCellAutolayoutSizingTests/TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests-Info.plist";
+				PRODUCT_NAME = TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -452,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F16825261936621200D801FD /* Build configuration list for PBXProject "TableViewCellAutolayoutSizing" */ = {
+		F16825261936621200D801FD /* Build configuration list for PBXProject "TableViewCellAutoLayoutSizing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F168255E1936621200D801FD /* Debug */,
@@ -461,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F16825601936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutolayoutSizing" */ = {
+		F16825601936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutoLayoutSizing.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F16825611936621200D801FD /* Debug */,
@@ -470,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F16825631936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutolayoutSizingTests" */ = {
+		F16825631936621200D801FD /* Build configuration list for PBXNativeTarget "TableViewCellAutoLayoutSizing.temp_caseinsensitive_renameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F16825641936621200D801FD /* Debug */,
