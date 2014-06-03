@@ -11,6 +11,7 @@
 @interface UITableViewCell (AutolayoutSupport)
 
 - (void)al_initAutolayoutSupport;
+
 - (CGFloat)al_heightForWidth:(CGFloat)width;
 
 @end

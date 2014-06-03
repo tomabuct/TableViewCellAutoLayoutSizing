@@ -24,9 +24,11 @@
   // this makes sure any preferredMaxLayoutWidths, etc. are set
   [self layoutIfNeeded];
 
-  // +1 to account for 0.5pt cell separator http://tomabuct.com/post/73484699239/uitableviews-in-ios-7
-  // since UITableView doesn't like it when tableView:heightForRowAtIndexPath: returns a fractional height
-  return [self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + 1;
+  // to account for the OS7 cell separator http://tomabuct.com/post/73484699239/uitableviews-in-ios-7
+  // TODO (tomabuct): add OS6 support
+  // ceil since UITableView doesn't like fractional values from tableView:heightForRowAtIndexPath:
+  const CGFloat kCellSeparatorViewHeight = 1 / self.contentScaleFactor;
+  return ceil([self.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height + kCellSeparatorViewHeight);
 }
 
 @end
